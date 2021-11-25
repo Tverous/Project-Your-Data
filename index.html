@@ -1,0 +1,139 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>
+			Projecting Your Data
+		</title>
+	</head>
+	<body>
+		<h1>
+			Projecting Your Data
+		</h1>
+		<h2>Overview</h2>
+		<img src="./assets/preview.gif" style="width: 20vw;">
+		<p>
+			An embedding is a map from input data to points in Euclidean space. 
+			In most machine learning applications, the model will transform high-dimensional vectors into a relatively low-dimensional space to make other processes.
+			For example, in the case of image classification, usually, the model needs to transform the input image into a high-dimensional vector known as embeddings after a series of operations and identify the category of the input image based on the value of the embedding output from the model. 
+			At the same time, the embeddings from the same category should be close to each other in the high-dimensional space. 
+			In other words, the Euclidean distance from the same category should be minimized.
+			And Researchers often need to explore the properties of a specific embedding to understand the behavior of their model.
+			For these users, gaining an understanding of embedding geometry is a key step in interpreting a machine learning model. 
+		</p>
+		<p>
+			One of the most approachable ways to analyze embeddings is to represent them visually. 
+			However, since embeddings usually exist as high-dimensional vectors, it is necessary to use dimensionality reduction to project the embeddings into a 2D or 3D space that humans can easily understand and analyze.
+		</p>
+
+		<p>
+			In this assignment, students need to build a classification model using the MNIST dataset and build an interactive embedding projector using tensorboard. 
+			Finally, students are required to interpret the behavior of the model based on different dimensionality reduction algorithms.
+		</p>
+		<p>
+			Instructors are allowed to modify the sample program based on their needs, including changing the dataset or the model architecture, etc.
+		</p>
+		<table style="width: 100%; text-align: left" cellSpacing="2" cellPadding="2" border="1">
+			<tr>
+				<td style="vertical-align: top"><b>Summary</b></td>
+				<td style="vertical-align: top">
+					Students build a Convolutional Neural Network (CNN) based on the MNIST dataset and build an interactive visualizer of high-dimensional data from the model's outputs. 
+					While doing so, students learn to investigate the properties of a specific embedding and the behavior of their model.
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Topics</b></td>
+				<td style="vertical-align: top">
+					Convolutional Neural Networks, image classification, dimensionality reduction, data visualization.
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Audience</b></td>
+				<td style="vertical-align: top">
+					Students who have learned introductory machine learning that covers the concepts of
+					training data, test data, modeling, classification, prediction accuracy, and basic ideas about
+					artificial neural networks.
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Difficulty</b></td>
+				<td style="vertical-align: top">
+					This is an intermediate to advanced assignment, and denpends on student's comfort in programming, understanding . 
+					This assignment is designed for student to complete in a week with an instructor or teaching assistens present to provide help.
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Strengths</b></td>
+				<td style="vertical-align: top">
+					<ul>
+						<li>This assignment covers the process from pre-processing the data to building the model and analyzing the predicted results. By completing these assignments, students are able to learn the practical application development process.</li>
+						<li>The interactive embedding projector allows students to explore and analyze the relationship visually between the dataset and the model more intuitively.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Weaknesses</b></td>
+				<td style="vertical-align: top">
+					<ul>
+						<li>Descriptions and explanations are platform-specific (Pytorch).</li>
+						<li>Preliminary knowledge of deep learning, especially image classification, is essential.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Dependencies</b></td>
+				<td style="vertical-align: top">
+					Learners are expected to have experience in building a machine learning model for
+					classification, preferably for image classification. Intermediate to advanced levels of
+					knowledge in machine learning, including artificial neural networks, convolutional neural
+					networks, loss function, and embedding are required or should be taught in the adopting
+					course. Mathematical competences in geometry, dimension reduction, and linear
+					transformation are highly recommended.
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top"><b>Variants</b></td>
+				<td style="vertical-align: top">
+					Instructors are able to modify the dataset, neural network, and different dimensionality reduction algorithms used to analyze the embeddings from the model to demonstrate different ways for exploring the data.
+				</td>
+			</tr>
+		</table>
+
+		<h2>Materials</h2>
+		<p>
+			<ul>
+				<li><a href="./src/handout.html">Assignment Handout (handout.html)</a></li>
+				<li><a href="./src/handout.md">Assignment Handout Source (handout.md)</a></li>
+			</ul>
+		</p>
+
+		<h2>Code Sample</h2>
+			<p>We provide two types of sample code that can be executed in different environments for the instructor and the students to refer.</p>
+		<h3>Local Machine</h3>
+		<p>
+			Ensure that the packages listed in requirements.txt are installed, and the 6006 port can be exposed to start the TensorBoard service to watch the projecting results.
+			<ul>
+				<li><a href="./src/requirements.txt">Required Python Package (requirements.txt)</a></li>
+				<li><a href="./src/sample.ipynb">Sample Program (sample.ipynb)</a></li>
+			</ul>
+		</p>
+		<h3>Google Colab</h3>
+		Make sure to register <a href="https://ngrok.com/">ngrok</a> and replace the value of <span>NGROK_AUTH_TOKEN</span> in the Google Colab file with the auth token you got after registering before running it, then you can access the TensorBoard and watch the results through the link generated by <a href="https://ngrok.com/">ngrok</a>.
+		The details are listed in the file.
+		<p>
+			<ul>
+				<li><a href="https://colab.research.google.com/drive/1-OKtuz4F0DgpyIpNQxyZNaglKoxTlbPR?usp=sharing">Google Colab</a></li>
+			</ul>
+		</p>
+
+		<h2>Official Github Repository [<a href="https://github.com/Tverous/Project-Your-Data">Link</a>]</h2>
+		<p>
+			We also maintain a copy of the assignment with the same materials on Github, which may be updated on an ongoing basis. If instructors or students have any questions or thoughts about the assignments, they can also create an issue on the project repository directly.
+		</p>
+		<h2>Supplement Materials</h2>
+		<p>
+			[1] Sorzano, Carlos Oscar Sánchez, Javier Vargas, and A. Pascual Montano. "A survey of dimensionality reduction techniques." arXiv preprint arXiv:1403.2877 (2014).
+			<br><br>
+		</p>
+	</body>
+</html>
