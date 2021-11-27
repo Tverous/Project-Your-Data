@@ -6,4 +6,6 @@
 > 
 > [Chia-Wei Tang](https://tverous.github.io/) and [Chao-Lin Liu](https://www.cs.nccu.edu.tw/~chaolin/)
 
-Contact: [106703054@g.nccu.edu.tw](mailto:106703054@g.nccu.edu.tw). Any questions or discussions are welcomed! 
+## Project Page
+
+https://tverous.github.io/Project-Your-Data/
