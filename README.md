@@ -1,4 +1,4 @@
-# Project Your Data
+# Projecting Your Data
 
 <img src="https://i.imgur.com/69GOnM9.gif" height="250"/>
 
