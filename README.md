@@ -8,4 +8,4 @@
 
 ## Project Page
 
-https://tverous.github.io/Project-Your-Data/
+https://tverous.github.io/Projecting-Your-Data/
