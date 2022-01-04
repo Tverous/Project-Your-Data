@@ -1,4 +1,4 @@
-# Project Your Data
+# Projecting Your Data
 ![](https://i.imgur.com/69GOnM9.gif)
 
 In this assignment, we will use Pytorch to implement a Convolutional Neural Network (CNN) classifier for the MNIST datasets and discusses how to use Pytorch to build a neural network model from scratch for a custom dataset. After finishing the classifier, we will build an embedding projector based on the model to observe the model's behavior on the dataset. This assignment will combine the concepts including classification, convolution neural network, and working with embeddings.
@@ -57,7 +57,7 @@ classes = (0, 1, 2, 3, 4, 5, 6, 7 , 8, 9)
 
 ### Part A.2 - Preview the Dataset [2 pt]
 
-Run the following code to preview the dataset:
+Run the following codes to preview the dataset:
 ``` python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -90,7 +90,7 @@ print(' '.join('%5s' % classes[labels[j]] for j in range(batch_size)))
 - `__getitem__` to support the indexing such that dataset[i] can be used to get the ith sample.
 
 
-Adjust the following code to build your MNIST dataset:
+Adjust the following codes to build your MNIST dataset:
 ``` python
 import torch
 
@@ -257,7 +257,7 @@ $ tensorboard --logdir=runs --bind_all
 ### Part C.2 - Project the Embeddings [5 pt]
 
 
-Adjust the following code to write the embeddings to the TensorBoard:
+Adjust the following codes to write the embeddings to the TensorBoard:
 ``` pyhton
 correct = 0
 total = 0
