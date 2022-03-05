@@ -11,3 +11,5 @@
 ## Project Page
 
 https://tverous.github.io/Projecting-Your-Data/
+
+[EAAI 2022 Model AI Assignment Slide](https://1drv.ms/b/s!Aiktfq4vkVE6godhYlXEI8WkCCIztw)
